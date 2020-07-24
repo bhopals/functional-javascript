@@ -1,7 +1,7 @@
 # Functional Javascript Concepts
 
 
-## 1.Functional Programming in simple terms
+## 1. Functional Programming in simple terms
 
 ROBERT C. MARTIN
 > The first rule of the functions is that they should be small. The second rule of the functions is they should be smaller than that.
@@ -72,5 +72,20 @@ But to be frank, we can create a function in Javascript which takes no argument 
 And thats the reason Javascript is not a pure functional programming language ( such as LIST, PHYTON, ERLANG, HASKELL) but rather a Multi-paradigm Language. 
 However, this langauge is very much sutable. So, in short, Javascript is a language that has support for Functions as arguments, Passing function to
 another functions etc - mainly because Javascript treats function as its **first-class-citiznes**
+
+
+`strict mode` - a restricted varient of javascript
+
+
+
+## 2. High-Order Functions
+
+A high-order function is a function that receives the function as its argument and/or return them as outputs.
+
+#### Abstraction and High-Order Function
+
+Generally speaking, high-order functions are written usually to abstract the common problems. In other words, high-order functions are 
+nothing but defining abstractions. For instance, `forEach` is an example of abstraction via high-order function. The user of API `forEach` does not have to worry about how `forEach` has implemented the traversing part, thus abstracting away the problem.
+
 
 
