@@ -78,6 +78,8 @@ another functions etc - mainly because Javascript treats function as its **first
 
 
 
+
+
 ## 2. High-Order Functions
 
 A high-order function is a function that receives the function as its argument and/or return them as outputs.
@@ -85,7 +87,35 @@ A high-order function is a function that receives the function as its argument a
 #### Abstraction and High-Order Function
 
 Generally speaking, high-order functions are written usually to abstract the common problems. In other words, high-order functions are 
-nothing but defining abstractions. For instance, `forEach` is an example of abstraction via high-order function. The user of API `forEach` does not have to worry about how `forEach` has implemented the traversing part, thus abstracting away the problem.
+nothing but defining abstractions. For instance, `forEach` is an example of abstraction via high-order function. The user of API `forEach` does not 
+have to worry about how `forEach` has implemented the traversing part, thus abstracting away the problem.
+
+
+
+
+## 3. Closures and High-Order Functions
+
+#### What are closures?
+Simply put Closure is a inner funtion - A function withing another function.
+
+```function outer() {
+    function inner() {
+    }
+}
+```
+
+Yes! thats exactly a Closure is. The function `inner` is called a closure function. The reason the Closure is so powerful is because of its access to the 
+scope chains ( or scope levels )
+
+**Closure Scopes**
+
+Techincally the Closure has access to three scopes
+
+1. Access to the global variables.
+2. Access to the outer function variables.
+3. Variable that has declared in its own scope.
+
+
 
 
 
