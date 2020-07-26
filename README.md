@@ -120,7 +120,7 @@ Techincally the Closure has access to three scopes
 
 
 
-## 4.  Currying and Partial Application
+## 4. Currying and Partial Application
 Currying is the process of Converting a function with ``n`` number of arguments into a nested unary function.
 
 Simple function
@@ -133,4 +133,24 @@ Curried function
 const add
 ```
 
+
+## 5. Compositions and Pipelines
+
+Unix Philosophy
+> Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new feature.
+
+> Expect the output of every program to become the input of another, as yet unknown, program.
+
+
+**Example**
+```
+let splitIntoSpaces = (str) => str.split(' ');
+let count = (array) => array.length
+
+// To make a composed function
+cont countWords = compose (splitIntoSpaces, count);
+countWords('Hey! How are you") //output - 4
+```
+
+** We can compose two functions only if it takes one argument. So in that was we hvae **Currying** and **Partial Currying** to our rescue.
 
