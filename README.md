@@ -34,12 +34,14 @@ A function ``f`` that takes ``X`` as its argument and returns the output ``Y``. 
 ### FUNCTIONS v/s METHODS in Javascript
 
 **FUNCTIONS** - A piece of code that can be called by its name. It can pass arguments and return values.
-```const simple = (a) => {return a} // a simple function
-   simple(5)                         // called by its name
+```
+const simple = (a) => {return a} // a simple function
+simple(5)                         // called by its name
 ```
 **METHODS** - A piece of code that must be called by its name along with its associate object name.
-```const obj = { simple : (a) => {return a} } 
-   obj.simple(5) // called by its name along with its associated object 
+```
+const obj = { simple : (a) => {return a} } 
+obj.simple(5) // called by its name along with its associated object 
 ```
 
 ### Functional Programming Benefits
@@ -98,7 +100,8 @@ have to worry about how `forEach` has implemented the traversing part, thus abst
 #### What are closures?
 Simply put Closure is a inner funtion - A function withing another function.
 
-```function outer() {
+```
+function outer() {
     function inner() {
     }
 }
@@ -117,5 +120,17 @@ Techincally the Closure has access to three scopes
 
 
 
+## 4.  Currying and Partial Application
+Currying is the process of Converting a function with ``n`` number of arguments into a nested unary function.
+
+Simple function
+```
+const add = (x, y) => x + y;
+```
+
+Curried function
+```
+const add
+```
 
 
